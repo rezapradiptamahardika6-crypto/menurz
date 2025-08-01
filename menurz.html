@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layanan RZ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      max-width: 420px;
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    h1 {
+      font-size: 28px;
+      color: hotpink;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .btn, .sub-btn {
+      background: transparent;
+      border: 2px solid hotpink;
+      color: hotpink;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      font-weight: 600;
+      width: 100%;
+      transition: 0.3s;
+    }
+    .btn:hover, .sub-btn:hover {
+      background: hotpink;
+      color: black;
+    }
+    .hidden {
+      display: none;
+    }
+    .logo {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+      border-radius: 4px;
+    }
+    .sub-option {
+      display: block;
+      background: hotpink;
+      color: black;
+      text-align: center;
+      padding: 10px;
+      margin: 6px 0;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .sub-option:hover {
+      background: #ff85c1;
+    }
+  </style>
+</head>
+<body><div class="card">
+  <h1>Layanan RZ 🔥</h1><button class="btn" onclick="toggle('sosmed-menu')">Suntik Sosmed</button>
+
+  <div id="sosmed-menu" class="hidden">
+    <!-- TikTok -->
+    <button class="sub-btn" onclick="toggle('tiktok-menu')">
+      <img class="logo" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"> TikTok
+    </button>
+    <div id="tiktok-menu" class="hidden">
+      <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%20100%20followers%20TikTok%20dong">FOLLOWERS TIKTOK PER 100 : 3K</a>
+      <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%20100%20like%20TikTok%20dong">100 LIKE TIKTOK : 1K</a>
+      <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%201000%20like%20TikTok%20dong">1.000 LIKE TIKTOK : 10K</a>
+      <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%2010000%20view%20TikTok%20dong">10.000 VIEW TIKTOK : 2K</a>
+      <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%20100000%20view%20TikTok%20dong">100.000 VIEW TIKTOK : 12K</a>
+    </div><!-- Instagram -->
+<button class="sub-btn" onclick="toggle('ig-menu')">
+  <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"> Instagram
+</button>
+<div id="ig-menu" class="hidden">
+  <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%201000%20like%20IG%20dong">1.000 LIKE IG : 2K</a>
+  <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%2010000%20like%20IG%20dong">10.000 LIKE IG : 12K</a>
+  <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%20100%20like%20IG%20INDO%20dong">100 LIKE IG INDO : 2K</a>
+  <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%201000%20like%20IG%20INDO%20dong">1.000 LIKE IG INDO : 12K</a>
+  <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%20100%20followers%20IG%20dong">FOLLOWERS IG PER 100 : 3K</a>
+  <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%20100%20followers%20IG%20INDO%20dong">FOLLOWERS IG PER 100 INDO : 4K</a>
+  <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%2010000%20view%20IG%20dong">10.000 VIEW IG : 2K</a>
+  <a class="sub-option" href="https://wa.me/6285659765518?text=Mau%20suntik%20100000%20view%20IG%20dong">100.000 VIEW IG : 12K</a>
+</div>
+
+  </div>  <!-- Jasa Bug --><button class="btn" onclick="toggle('bug-menu')">Jasa Bug WA</button>
+
+  <div id="bug-menu" class="hidden">
+    <a class="sub-option" href="https://wa.me/6285169571466?text=Mau%20order%20jasa%20bug%20wa%20dong%20bang">CHAT RZ</a>
+  </div>
+</div><script>
+  function toggle(id) {
+    const el = document.getElementById(id);
+    el.classList.toggle('hidden');
+  }
+</script></body>
+</html>
